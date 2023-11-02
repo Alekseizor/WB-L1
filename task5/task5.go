@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+// отправляет чето-там
 func Sender(wg *sync.WaitGroup, ch chan<- int, chClose <-chan bool) {
 	defer wg.Done()
 	for i := 1; ; i++ {
